@@ -1,0 +1,119 @@
+
+-> BY NEBULA TECHNOLOGY
+-> Date : 29 January 2024
+
+To check version of node js 
+open node js commnad prompt
+and type --> node -v
+
+1.Basics of JS 
+--> JS Console
+--> Data Types 
+--> Loops
+--> Functions
+--> Arrow Functions ()=> {}
+--> this keyword
+--> Object ( IMP for React )
+
+1.React JS
+--> Node JS ( https://nodejs/en/download )
+--> Required to install JSON Server and
+    Create React App CLI ( Command Line Interface )
+--> Code Editor => vS code / Atom / Notepad++
+
+--> It is JS library Developed By Facebook
+
+--> Commands 
+Step 1 : npm install -g create-react-app
+Step 2 : npx create-react-app my-react-app
+Step 3 : cd my-react-app
+Step 4 : npm start
+
+2.Creating React App
+
+Go to myapp
+in src > app.js
+
+in app.js 
+
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      
+    </div>
+  );
+}
+
+export default App;
+
+
+--> React usage virtual DOM 
+--> Component Based
+
+3. First Program 
+
+create the folder component in scr 
+the in component create component.js
+then import React from 'react';
+
+--> Code 
+
+import React from 'react';
+
+function JSXComponent() {
+    return(
+        <h1>JSX Component</h1>
+    )
+}
+
+export default JSXComponent;
+
+--> Then import this file in app.js
+--> add this tag in div 
+     <JSXComponent/>
+
+--> Code for Above 
+
+import './App.css';
+import JSXComponent from './Components/JSXComponent';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello This is my first React App</h1>
+      <JSXComponent/>
+    </div>
+  );
+}
+
+export default App;
+
+--> Above Components Is known as functional / Static compoents 
+     Normal function which returns JSX
+
+-->But for Stateless Components we use Class Component / Hooks
+    Having class extends React.Component
+    and render method returns JSX
+      
+--> Class Component Example
+
+import React from "react";
+class ClassComponents extends React.Component {
+  render() {
+    return <h1>Class Component</h1>;
+  }
+}
+export default ClassComponents;
+
+--> Export Ways 
+
+export default ClassComponents;
+// Default Export = We can give alias
+
+let x=1;
+export {x};
+// Name Export == we cannot give alias
+
+--> States Of Functional Component 
